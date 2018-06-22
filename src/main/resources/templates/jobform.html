@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.com">
+<head>
+    <meta charset="UTF-8" />
+    <title>Jobs</title>
+    <link rel="stylesheet" type="text/css" href="/add-style.css">
+</head>
+<body>
+<form class="content-wrapper app-section" action="#" th:action="@{/process}" th:object="${job}" method="post">
+    <input type="hidden" th:field="*{id}" />
+    <label>Job Title:&nbsp;&nbsp;</label>
+    <input type="text" th:field="*{title}"/>
+    <span th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></span>
+    <label>&nbsp;&nbsp;Company:&nbsp;&nbsp;</label>
+    <input type="text" th:field="*{company}"/>
+    <span th:if="${#fields.hasErrors('company')}" th:errors="*{company}"></span>
+    <label>&nbsp;&nbsp;Requirements:&nbsp;&nbsp;</label>
+    <input type="text" th:field="*{requirements}"/>
+    <span th:if="${#fields.hasErrors('requirements')}" th:errors="*{requirements}"></span>
+    <label>&nbsp;&nbsp;Neccessary Skills:&nbsp;&nbsp;</label>
+    <input type="text" th:field="*{skills}"/>
+    <span th:if="${#fields.hasErrors('skills')}" th:errors="*{skills}"></span>
+    <input type="submit" value="Submit"/>
+</form>
+</body>
+</html>
