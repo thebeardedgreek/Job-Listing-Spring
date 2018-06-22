@@ -14,11 +14,14 @@ body{
   border: 2px solid white;
 }
 
+.m1{
+	padding-top: 400px;
+}
+
 .app-section{
-  height: 100%;
-  background-size: cover;
-  background-position: 50% 50%;
-  display: flex;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 300px;
   align-items: center;
   color: white;  
 }

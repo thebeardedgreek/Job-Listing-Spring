@@ -17,12 +17,14 @@
     </div>
 </nav>
 <br><br>
-<div class="content-wrapper app-section">
-<h4><strong>Title:</strong> <span th:text="${job.title}" ></span></h4><br/>
-<h4><strong>Company:</strong> <span th:text="${job.company}" ></span></h4><br/>
-<h4><strong>Requirements:</strong> <span th:text="${job.requirements}" ></span></h4><br/>
-<h4><strong>Skills:</strong> <span th:text="${job.skills}" ></span></h4><br/>
-<strong><a class="link" th:href="@{/delete/{id}(id=${job.id})}">Delete this job</a></strong>
+<div class="m1">
+    <div class="content-wrapper app-section">
+        <h4><strong>Title:</strong> <span th:text="${job.title}" ></span></h4><br/>
+        <h4><strong>Company:</strong> <span th:text="${job.company}" ></span></h4><br/>
+        <h4><strong>Requirements:</strong> <span th:text="${job.requirements}" ></span></h4><br/>
+        <h4><strong>Skills:</strong> <span th:text="${job.skills}" ></span></h4><br/>
+        <strong><a class="link" th:href="@{/delete/{id}(id=${job.id})}">Delete this job</a></strong>
+    </div>
 </div>
 </body>
 </html>
